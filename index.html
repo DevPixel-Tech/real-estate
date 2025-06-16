@@ -9,12 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Real Estate</title>
 </head>
 
 <body class="m-0 p-0">
+
     <!-- Hero Section -->
-    <header class="relative h-screen bg-fixed bg-cover bg-center rounded-none"
+    <header class="relative h-screen bg-cover bg-center rounded-none "
         style="background-image: url('/assets/images/hero.jpg')">
         <!-- Navbar -->
         <nav class="w-full fixed top-0 left-0 z-50 bg-black/20">
@@ -38,9 +43,194 @@
             </div>
         </div>
     </header>
+    <!-- Hero Section -->
+
+    <!-- Top Pick Section -->
+    <section class="bg-[#f5f2f0]/50 py-24 px-4 text-center">
+        <div class="max-w-6xl mx-auto">
+            <!-- Title -->
+            <div class="mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Top Pick Villas</h2>
+                <p class="text-base sm:text-lg text-gray-700">
+                    Curabitur efficitur ante vel mi bibendum, et maximus nisl ultricies.
+                </p>
+            </div>
+
+            <!-- Cards Wrapper -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                    <div class="relative">
+                        <!-- Swiper inside image area -->
+                        <div class="swiper cardSwiper rounded-br-2xl">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://picsum.photos/id/1011/400/300" class="w-full h-64 object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://picsum.photos/id/1015/400/300" class="w-full h-64 object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://picsum.photos/id/1016/400/300" class="w-full h-64 object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://picsum.photos/id/1018/400/300" class="w-full h-64 object-cover" />
+                                </div>
+                            </div>
+                            <div class="swiper-pagination absolute bottom-2 left-0 right-0"></div>
+                        </div>
+
+                        <!-- Like Button -->
+                        <button
+                            class="absolute top-2 right-2 bg-white rounded-full p-2 shadow hover:scale-110 transition z-50 cursor-pointer">
+                            ❤️
+                        </button>
+                    </div>
+
+                    <!-- Card Content -->
+                    <div class="p-4 text-left">
+                        <p class="text-gray-600 mb-1"><span class="font-bold text-black">Italy</span> •
+                            <span>Mountains</span>
+                        </p>
+                        <h3 class="text-lg font-semibold mb-4">Villa in the Mountains</h3>
+                        <div class="grid grid-cols-2 gap-3 text-sm text-gray-600">
+                            <div class="flex items-center gap-2">👥 4 Guests</div>
+                            <div class="flex items-center gap-2">🚰 2 Bathrooms</div>
+                            <div class="flex items-center gap-2">📊 460 m²</div>
+                            <div class="flex items-center gap-2">🚰 4 Bathrooms</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                    <div class="relative">
+                        <!-- Swiper inside image area -->
+                        <div class="swiper cardSwiper rounded-br-2xl">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://picsum.photos/id/1011/400/300" class="w-full h-64 object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://picsum.photos/id/1015/400/300" class="w-full h-64 object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://picsum.photos/id/1016/400/300" class="w-full h-64 object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://picsum.photos/id/1018/400/300" class="w-full h-64 object-cover" />
+                                </div>
+                            </div>
+                            <div class="swiper-pagination absolute bottom-2 left-0 right-0"></div>
+                        </div>
+
+                        <!-- Like Button -->
+                        <button
+                            class="absolute top-2 right-2 bg-white rounded-full p-2 shadow hover:scale-110 transition z-50 cursor-pointer">
+                            ❤️
+                        </button>
+                    </div>
+
+                    <!-- Card Content -->
+                    <div class="p-4 text-left">
+                        <p class="text-gray-600 mb-1"><span class="font-bold text-black">Italy</span> •
+                            <span>Mountains</span>
+                        </p>
+                        <h3 class="text-lg font-semibold mb-4">Villa in the Mountains</h3>
+                        <div class="grid grid-cols-2 gap-3 text-sm text-gray-600">
+                            <div class="flex items-center gap-2">👥 4 Guests</div>
+                            <div class="flex items-center gap-2">🚰 2 Bathrooms</div>
+                            <div class="flex items-center gap-2">📊 460 m²</div>
+                            <div class="flex items-center gap-2">🚰 4 Bathrooms</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                    <div class="relative">
+                        <!-- Swiper inside image area -->
+                        <div class="swiper cardSwiper rounded-br-2xl">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://picsum.photos/id/1011/400/300" class="w-full h-64 object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://picsum.photos/id/1015/400/300" class="w-full h-64 object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://picsum.photos/id/1016/400/300" class="w-full h-64 object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://picsum.photos/id/1018/400/300" class="w-full h-64 object-cover" />
+                                </div>
+                            </div>
+                            <div class="swiper-pagination absolute bottom-2 left-0 right-0"></div>
+                        </div>
+
+                        <!-- Like Button -->
+                        <button
+                            class="absolute top-2 right-2 bg-white rounded-full p-2 shadow hover:scale-110 transition z-50 cursor-pointer">
+                            ❤️
+                        </button>
+                    </div>
+
+                    <!-- Card Content -->
+                    <div class="p-4 text-left">
+                        <p class="text-gray-600 mb-1"><span class="font-bold text-black">Italy</span> •
+                            <span>Mountains</span>
+                        </p>
+                        <h3 class="text-lg font-semibold mb-4">Villa in the Mountains</h3>
+                        <div class="grid grid-cols-2 gap-3 text-sm text-gray-600">
+                            <div class="flex items-center gap-2">👥 4 Guests</div>
+                            <div class="flex items-center gap-2">🚰 2 Bathrooms</div>
+                            <div class="flex items-center gap-2">📊 460 m²</div>
+                            <div class="flex items-center gap-2">🚰 4 Bathrooms</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+
+            </div>
+
+
+        </div>
+    </section>
+    <script>
+        const swipers = document.querySelectorAll('.cardSwiper');
+        swipers.forEach((swiperEl) => {
+            new Swiper(swiperEl, {
+                slidesPerView: 1,
+                pagination: {
+                    el: swiperEl.querySelector('.swiper-pagination'),
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+    <style>
+        .swiper-pagination-bullet {
+            background-color: white !important;
+            opacity: 0.5;
+            transition: all 0.3s ease;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+    </style>
+
+    <!-- Top Pick Section -->
+
+
 
     <!-- About Section -->
-    <section class="py-16 px-4 max-w-7xl mx-auto mt-20">
+    <section class="py-16 px-4 max-w-7xl mx-auto mt-20 md:mb-30">
         <div class="grid md:grid-cols-2 gap-10 items-center mb-20">
             <!-- Text Content -->
             <div>
@@ -60,15 +250,19 @@
             <!-- Images -->
             <div class="flex flex-col sm:relative sm:min-h-[450] items-center gap-6">
                 <!-- Sol üstteki görsel -->
-                <img src="/assets/images/aboutImage.jpg" alt="About Us" style="width: 400px;"
+                <img src="/assets/images/aboutImage.jpg" alt="About Us" style="width: 350px;"
                     class="sm:absolute sm:top-0 sm:left-0 rounded-xl shadow-md z-10" />
 
                 <!-- Alttaki görsel -->
-                <img src="/assets/images/aboutImage2.jpg" alt="About Us" style="width: 450px;"
+                <img src="/assets/images/aboutImage2.jpg" alt="About Us" style="width: 400px;"
                     class="sm:relative sm:ml-24 sm:mt-24 md:top-50 md:left-30 rounded-xl shadow-lg z-0" />
             </div>
         </div>
     </section>
+    <!-- About Section -->
+
+
+
 </body>
 
 </html>
