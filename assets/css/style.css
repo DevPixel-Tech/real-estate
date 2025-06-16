@@ -1,0 +1,37 @@
+body {
+  font-family: "Rufina", serif;
+}
+
+:root {
+  --color-primary: #5b656f;
+  --color-primary2: #8998a6;
+  --color-primary3: #dfe3e7;
+  --color-secondary: #ab9c85;
+  --color-secondary2: #f5e9d6;
+  --color-secondary3: #f5f3f1;
+}
+
+
+h2 {
+  font-size: 52px;
+  line-height: 64px;
+}
+
+h3 {
+  font-size: 44px;
+  line-height: 56px;
+}
+
+
+
+.rufina-regular {
+  font-family: "Rufina", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rufina-bold {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-style: normal;
+}

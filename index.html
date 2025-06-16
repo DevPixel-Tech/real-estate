@@ -2,13 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Real Estate</title>
 </head>
 
-<body>
- 
+<body class="m-0 p-0">
+    <!-- Header -->
+    <header class="relative h-screen bg-cover bg-center" style="background-image: url('/assets/images/hero.jpg')">
+        <!-- Navbar -->
+        <nav class="w-full fixed top-0 left-0 z-50 bg-black/20">
+            <div class="navWrapper flex items-center justify-between p-4 mx-auto max-w-7xl">
+                <div>
+                    <a href="#" class="text-2xl font-bold text-white">Real Estate</a>
+                </div>
+                <div class="flex space-x-20">
+                    <a href="#" class="text-lg text-white hover:text-clifford">VILLAS</a>
+                    <a href="#" class="text-lg text-white hover:text-clifford">ABOUT US</a>
+                    <a href="#" class="text-lg text-white hover:text-clifford">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="h-full flex flex-col justify-center items-center text-white text-center px-4">
+            <div class="mt-20">
+                <h1 class="text-8xl font-bold mb-4">Be our Guest</h1>
+                <h4 class="text-4xl mb-8 bg-white text-[#C9BDAB] p-3 px-10 rounded-2xl">LIVE like a king in our best
+                    houses</h4>
+            </div>
+
+            <!-- Filter Bar -->
+            <div class="bg-white bg-opacity-90 rounded-xl shadow-lg px-6 py-4 mt-6 w-full max-w-6xl text-black">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 gap-4 sm:gap-0">
+                    <!-- Country -->
+                    <select class="p-2 border border-gray-300 rounded w-full sm:w-auto flex-1 text-black">
+                        <option>Country</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                        <option>Spain</option>
+                    </select>
+
+                    <!-- Date -->
+                    <input type="date" class="p-2 border border-gray-300 rounded w-full sm:w-auto flex-1 text-black" />
+
+                    <!-- Guests -->
+                    <input type="number" placeholder="Guests"
+                        class="p-2 border border-gray-300 rounded w-full sm:w-auto flex-1 text-black" min="1" />
+
+                    <!-- Price -->
+                    <input type="number" placeholder="Max Price"
+                        class="p-2 border border-gray-300 rounded w-full sm:w-auto flex-1 text-black" min="0" />
+
+                    <!-- Search Button with Icon -->
+                    <button
+                        class="flex items-center justify-center bg-[#5B656F] text-white py-3 px-6 cursor-pointer rounded hover:bg-red-600 transition duration-300 mt-2 sm:mt-0 sm:ml-4">
+                        <span>Search</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
 </body>
 
 </html>
