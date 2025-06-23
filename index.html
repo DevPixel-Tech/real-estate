@@ -2,50 +2,143 @@
 <html lang="en">
 
 <head>
+    <!-- Charset & Viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <!-- Google Fonts -->
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Elsewhere Real Estate – Modern, elegant and user-focused real estate solutions." />
+    <meta name="keywords" content="Real Estate, Property, Elsewhere, Architecture, Housing, Buy Home, Rent Home" />
+    <meta name="author" content="Elsewhere Real Estate" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Title -->
+    <title>home | elsewhere Real Estate</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+
+    <!-- Google Fonts: Rufina -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet" />
-    <!-- Site favicon -->
-    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Tailwind CSS framework -->
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Swiper CSS for image sliders -->
+
+    <!-- Swiper (Slider) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Swiper JS for image sliders functionality -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="/assets/js/script.js" defer></script>
-    <title>elsewhere | Real Estate</title>
+
+    <!-- Open Graph (for Facebook & LinkedIn sharing) -->
+    <meta property="og:title" content="Elsewhere | Real Estate" />
+    <meta property="og:description" content="Explore elegant and modern properties with Elsewhere Real Estate." />
+    <meta property="og:image" content="/assets/images/og-image.jpg" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Elsewhere | Real Estate" />
+    <meta name="twitter:description" content="Explore elegant and modern properties with Elsewhere Real Estate." />
+    <meta name="twitter:image" content="/assets/images/og-image.jpg" />
 </head>
 
+
+
 <body class="m-0 p-0">
+
+    <!-- ==================== NAVBAR & HAMBURGERMENU SECTION ==================== -->
+    <section class="fixed top-0 left-0 w-full z-50">
+        <nav class="bg-black/20 backdrop-blur-sm">
+            <div class="flex items-center justify-between p-4 mx-auto max-w-7xl">
+                <!-- Logo -->
+                <a href="/index.html" class="text-2xl font-bold text-white">
+                    <img class="w-36 h-auto" src="/assets/images/logo.png" alt="Logo" />
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden sm:flex space-x-10 items-center text-white">
+                    <a href="/real-estate.html"
+                        class="relative group text-white pb-1 transition-all duration-300 hover:text-[#C9BDAB]">
+                        REAL ESTATE
+                        <span
+                            class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C9BDAB] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="/about.html"
+                        class="relative group text-white pb-1 transition-all duration-300 hover:text-[#C9BDAB]">
+                        ABOUT US
+                        <span
+                            class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C9BDAB] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="/contact.html"
+                        class="relative group text-white pb-1 transition-all duration-300 hover:text-[#C9BDAB]">
+                        CONTACT
+                        <span
+                            class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C9BDAB] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="/contact.html"
+                        class="bg-[#C9BDAB] text-black py-2 px-4 rounded-xl transition-all duration-300 hover:bg-white hover:text-[#C9BDAB] hover:scale-105 shadow-md">
+                        Book a Visit
+                    </a>
+                </div>
+
+                <!-- Hamburger Icon -->
+                <button id="menuToggle" class="sm:hidden text-white text-3xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Mobile Menu -->
+        <div id="mobileMenu"
+            class="fixed top-0 right-0 h-full w-full bg-black/90 backdrop-blur-sm transform translate-x-full transition-transform duration-300 ease-in-out z-50 flex flex-col p-6 space-y-6">
+
+            <!-- Logo + Close Button -->
+            <div class="flex items-center justify-between mb-6">
+                <a href="/index.html">
+                    <img src="/assets/images/logo.png" alt="Logo" class="w-32 h-auto" />
+                </a>
+                <button id="menuClose" class="text-white text-3xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="flex flex-col items-center justify-center h-full space-y-6 text-xl text-white">
+                <a href="/real-estate.html"
+                    class="hover:text-[#C9BDAB] transition-all duration-300 hover:scale-105 tracking-wide">REAL
+                    ESTATE</a>
+                <a href="/about.html"
+                    class="hover:text-[#C9BDAB] transition-all duration-300 hover:scale-105 tracking-wide">ABOUT US</a>
+                <a href="/contact.html"
+                    class="hover:text-[#C9BDAB] transition-all duration-300 hover:scale-105 tracking-wide">CONTACT</a>
+                <a href="/contact.html"
+                    class="mt-6 bg-[#C9BDAB] text-black py-2 px-6 rounded-xl hover:bg-white hover:text-[#C9BDAB] transition-all duration-300 hover:scale-105 shadow-md">
+                    Book a Visit
+                </a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ==================== NAVBAR & HAMBURGERMENU SECTION ==================== -->
 
     <!-- ==================== HERO SECTION ==================== -->
     <header class="relative h-screen overflow-hidden rounded-none mb-14">
         <!-- Video Background -->
         <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-            <source src="/assets/videos/mortgage.mp4" type="video/mp4">
+            <source src="/assets/videos/mortgage.mp4" type="video/mp4" />
         </video>
-
-        <!-- Navbar -->
-        <nav class="w-full fixed top-0 left-0 z-50 bg-black/20">
-            <div class="flex flex-col sm:flex-row items-center justify-between p-2 mx-auto max-w-7xl">
-                <a href="/index.html" class="text-2xl font-bold text-white mb-2 sm:mb-0">
-                    <img class="w-50 h-25" src="/assets/images/logo.png" alt="">
-                </a>
-                <div class="flex flex-col sm:flex-row sm:space-x-12 text-center">
-                    <a href="#" class="text-lg text-white hover:text-clifford py-1">VILLAS</a>
-                    <a href="/about.html" class="text-lg text-white hover:text-clifford py-1">ABOUT US</a>
-                    <a href="/contact.html" class="text-lg text-white hover:text-clifford py-1">CONTACT</a>
-                </div>
-            </div>
-        </nav>
 
         <!-- Hero Content -->
         <div class="relative z-10 h-full flex flex-col justify-center items-center text-white text-center px-4">
@@ -57,11 +150,9 @@
             </div>
         </div>
     </header>
-
     <!-- ==================== HERO SECTION ==================== -->
 
     <!-- ==================== MORTGAGE SECTION ==================== -->
-
     <section class="relative min-h-[700px] grid grid-cols-1 lg:grid-cols-2 gap-4 px-6 py-16 bg-center "
         style="background-image: url('/assets/images/mortgage.png')">
 
@@ -102,9 +193,6 @@
             </div>
         </div>
     </section>
-
-
-
     <!-- ==================== MORTGAGE SECTION ==================== -->
 
     <!-- ==================== TOP PICK VILLAS SECTION ==================== -->
@@ -288,18 +376,6 @@
 
         </div>
     </section>
-    <script>
-        const swipers = document.querySelectorAll('.cardSwiper');
-        swipers.forEach((swiperEl) => {
-            new Swiper(swiperEl, {
-                slidesPerView: 1,
-                pagination: {
-                    el: swiperEl.querySelector('.swiper-pagination'),
-                    clickable: true,
-                },
-            });
-        });
-    </script>
     <style>
         .swiper-pagination-bullet {
             background-color: white !important;

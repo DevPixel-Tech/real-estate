@@ -2,6 +2,10 @@ body {
   font-family: "Rufina", serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 :root {
   --color-primary: #5b656f;
   --color-primary2: #8998a6;
@@ -21,4 +25,12 @@ body {
   font-family: "Rufina", serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.swiper-pagination-bullet {
+  background: #c9bdab;
+  opacity: 0.7;
+}
+.swiper-pagination-bullet-active {
+  background: #000;
 }

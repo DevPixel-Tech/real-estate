@@ -1,3 +1,16 @@
+// Top Villas
+const swipers = document.querySelectorAll(".cardSwiper");
+swipers.forEach((swiperEl) => {
+  new Swiper(swiperEl, {
+    slidesPerView: 1,
+    pagination: {
+      el: swiperEl.querySelector(".swiper-pagination"),
+      clickable: true,
+    },
+  });
+});
+// Top Villas
+
 // Mortgage Calculator
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("mortgageForm");
@@ -90,5 +103,41 @@ document.addEventListener("DOMContentLoaded", () => {
     resultText.classList.add("text-green-400");
   });
 });
-
 // Mortgage Calculator
+
+// Hamburger Menu
+const menuToggle = document.getElementById("menuToggle");
+const menuClose = document.getElementById("menuClose");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.remove("translate-x-full");
+  mobileMenu.classList.add("translate-x-0");
+});
+
+menuClose.addEventListener("click", () => {
+  mobileMenu.classList.remove("translate-x-0");
+  mobileMenu.classList.add("translate-x-full");
+});
+// Hamburger Menu
+
+// SwiperJS Real Estate
+document.addEventListener("DOMContentLoaded", function () {
+  const swipers = document.querySelectorAll(".swiper");
+
+  swipers.forEach((swiperEl) => {
+    new Swiper(swiperEl, {
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: swiperEl.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+    });
+  });
+});
+
+// SwiperJS Real Estate
