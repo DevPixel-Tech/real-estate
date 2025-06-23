@@ -20,19 +20,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Swiper JS for image sliders functionality -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/script.js" defer></script>
     <title>elsewhere | Real Estate</title>
 </head>
 
 <body class="m-0 p-0">
 
     <!-- ==================== HERO SECTION ==================== -->
-    <header class="relative h-screen bg-cover bg-center bg-fixed rounded-none"
-        style="background-image: url('/assets/images/hero.jpg')">
+    <header class="relative h-screen overflow-hidden rounded-none mb-14">
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+            <source src="/assets/videos/mortgage.mp4" type="video/mp4">
+        </video>
+
         <!-- Navbar -->
-        <nav class="w-full fixed top-0 left-0 z-50 bg-black/20 ">
+        <nav class="w-full fixed top-0 left-0 z-50 bg-black/20">
             <div class="flex flex-col sm:flex-row items-center justify-between p-2 mx-auto max-w-7xl">
-                <a href="/index.html" class="text-2xl font-bold text-white mb-2 sm:mb-0"><img class="w-50 h-25"
-                        src="/assets/images/logo.png" alt=""></a>
+                <a href="/index.html" class="text-2xl font-bold text-white mb-2 sm:mb-0">
+                    <img class="w-50 h-25" src="/assets/images/logo.png" alt="">
+                </a>
                 <div class="flex flex-col sm:flex-row sm:space-x-12 text-center">
                     <a href="#" class="text-lg text-white hover:text-clifford py-1">VILLAS</a>
                     <a href="/about.html" class="text-lg text-white hover:text-clifford py-1">ABOUT US</a>
@@ -42,7 +48,7 @@
         </nav>
 
         <!-- Hero Content -->
-        <div class="h-full flex flex-col justify-center items-center text-white text-center px-4">
+        <div class="relative z-10 h-full flex flex-col justify-center items-center text-white text-center px-4">
             <div class="mt-28 sm:mt-32">
                 <h1 class="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4">Be our Guest</h1>
                 <h4 class="text-lg sm:text-2xl lg:text-4xl mb-8 bg-white text-[#C9BDAB] p-3 px-6 sm:px-10 rounded-2xl">
@@ -51,7 +57,55 @@
             </div>
         </div>
     </header>
+
     <!-- ==================== HERO SECTION ==================== -->
+
+    <!-- ==================== MORTGAGE SECTION ==================== -->
+
+    <section class="relative min-h-[700px] grid grid-cols-1 lg:grid-cols-2 gap-4 px-6 py-16 bg-center "
+        style="background-image: url('/assets/images/mortgage.png')">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm z-0"></div>
+
+        <!-- Text Section (sol) -->
+        <div class="relative z-10 flex items-center justify-center">
+            <div class="bg-white/80 backdrop-blur p-10 rounded-xl shadow-lg w-full max-w-lg text-left">
+                <h2 class="text-3xl font-serif text-gray-800 mb-4">Why You Should Invest in Rental Properties</h2>
+                <p class="text-gray-700 text-lg">
+                    Investing in rental properties yields a steady and substantial profit because it allows you to
+                    receive monthly cash flow and a stable ROI.
+                </p>
+            </div>
+        </div>
+
+        <!-- Mortgage Calculator (sağ) -->
+        <div class="relative z-10 flex items-center justify-center">
+            <div class="bg-black/75 p-10 rounded-xl text-white text-center w-full max-w-lg">
+                <h2 class="text-3xl font-bold mb-4">Mortgage Calculator</h2>
+                <p class="mb-4">Calculate your estimated monthly mortgage payment in USD.</p>
+
+                <form id="mortgageForm" class="flex flex-col gap-4">
+                    <input type="text" inputmode="numeric" id="price" placeholder="Home Price ($)" required
+                        class="p-2 rounded text-white bg-transparent border border-white placeholder-white" />
+                    <input type="text" inputmode="numeric" id="down" placeholder="Down Payment ($)" required
+                        class="p-2 rounded text-white bg-transparent border border-white placeholder-white" />
+                    <input type="text" inputmode="decimal" id="rate" placeholder="Interest Rate (%)" required
+                        class="p-2 rounded text-white bg-transparent border border-white placeholder-white" />
+                    <input type="text" inputmode="numeric" id="term" placeholder="Loan Term (years)" required
+                        class="p-2 rounded text-white bg-transparent border border-white placeholder-white" />
+                    <button type="submit"
+                        class="bg-[#C9BDAB] text-white py-2 rounded hover:bg-[#A89F8D] transition">Calculate</button>
+                </form>
+
+                <p id="result" class="mt-4 text-xl font-semibold"></p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ==================== MORTGAGE SECTION ==================== -->
 
     <!-- ==================== TOP PICK VILLAS SECTION ==================== -->
     <section class="bg-[#f5f2f0]/50 py-24 px-4 text-center">
