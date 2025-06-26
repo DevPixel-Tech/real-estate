@@ -1,257 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Charset & Viewport -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- SEO Meta Tags -->
-    <meta name="descwription"
-        content="Elsewhere Real Estate – Modern, elegant and user-focused real estate solutions." />
-    <meta name="keywords" content="Real Estate, Property, Elsewhere, Architecture, Housing, Buy Home, Rent Home" />
-    <meta name="author" content="Elsewhere Real Estate" />
-    <meta name="robots" content="index, follow" />
-
-    <!-- Title -->
-    <title>home | elsewhere Real Estate</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
-
-    <!-- Google Fonts: Rufina -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet" />
-
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-
-    <!-- Font Awesome (Icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-    <!-- Tailwind CSS (CDN) -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- Swiper (Slider) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="/assets/js/script.js" defer></script>
-
-    <!-- Open Graph (for Facebook & LinkedIn sharing) -->
-    <meta property="og:title" content="Elsewhere | Real Estate" />
-    <meta property="og:description" content="Explore elegant and modern properties with Elsewhere Real Estate." />
-    <meta property="og:image" content="/assets/images/og-image.jpg" />
-    <meta property="og:url" content="https://yourdomain.com/" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Elsewhere | Real Estate" />
-    <meta name="twitter:description" content="Explore elegant and modern properties with Elsewhere Real Estate." />
-    <meta name="twitter:image" content="/assets/images/og-image.jpg" />
-</head>
+<meta charset="UTF-8">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta content="Elsewhere Real Estate – Modern, elegant and user-focused real estate solutions." name="description">
+<meta content="Real Estate, Property, Elsewhere, Architecture, Housing, Buy Home, Rent Home" name="keywords">
+<meta content="Elsewhere Real Estate" name="author">
+<meta content="index, follow" name="robots">
+<title>home | elsewhere - real estate</title>
+<link href="/assets/images/logo.png" rel="icon" type="image/png">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/assets/js/script.js" defer></script>
+<meta content="Elsewhere | Real Estate" property="og:title">
+<meta content="Explore elegant and modern properties with Elsewhere Real Estate." property="og:description">
+<meta content="/assets/images/og-image.jpg" property="og:image">
+<meta content="https://yourdomain.com/" property="og:url">
+<meta content="website" property="og:type">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Elsewhere | Real Estate" name="twitter:title">
+<meta content="Explore elegant and modern properties with Elsewhere Real Estate." name="twitter:description">
+<meta content="/assets/images/og-image.jpg" name="twitter:image">
 
 <body class="m-0 p-0">
+
     <!-- ==================== NAVBAR & HAMBURGERMENU SECTION ==================== -->
-    <section class="fixed top-0 left-0 w-full z-50">
+    <section class="w-full left-0 fixed top-0 z-50">
         <nav class="bg-black/20 backdrop-blur-sm">
-            <div class="flex items-center justify-between p-4 mx-auto max-w-7xl">
-                <!-- Logo -->
-                <a href="/index.html" class="text-2xl font-bold text-white">
-                    <img class="w-36 h-auto" src="/assets/images/logo.png" alt="Logo" />
-                </a>
-
-                <!-- Desktop Menu -->
-                <div class="hidden sm:flex space-x-10 items-center text-white">
-                    <a href="/real-estate.html"
-                        class="relative group text-white pb-1 transition-all duration-300 hover:text-[#C9BDAB]">
-                        REAL ESTATE
+            <div class="flex items-center justify-between max-w-7xl mx-auto p-4"><a href="/index.html"
+                    class="text-white font-bold text-2xl"><img src="/assets/images/logo.png" class="h-auto w-36"
+                        alt="Logo"></a>
+                <div class="items-center hidden sm:flex space-x-10 text-white"><a href="/real-estate.html"
+                        class="text-white duration-300 group hover:text-[#C9BDAB] pb-1 relative transition-all">REAL
+                        ESTATE <span
+                            class="duration-300 transition-all bg-[#C9BDAB] absolute bottom-0 group-hover:w-full h-[2px] left-0 w-0"></span>
+                        <a href="/about.html"
+                            class="text-white duration-300 group hover:text-[#C9BDAB] pb-1 relative transition-all">ABOUT
+                            US <span
+                                class="duration-300 transition-all bg-[#C9BDAB] absolute bottom-0 group-hover:w-full h-[2px] left-0 w-0"></span>
+                        </a>
+                        <a href="/faq.html"
+                            class="text-white duration-300 group hover:text-[#C9BDAB] pb-1 relative transition-all">F.A.Q
+                            <span
+                                class="duration-300 transition-all bg-[#C9BDAB] absolute bottom-0 group-hover:w-full h-[2px] left-0 w-0"></span>
+                        </a>
+                    </a><a href="/about.html"
+                        class="text-white duration-300 group hover:text-[#C9BDAB] pb-1 relative transition-all">ABOUT
+                        US <span
+                            class="duration-300 transition-all bg-[#C9BDAB] absolute bottom-0 group-hover:w-full h-[2px] left-0 w-0"></span>
+                    </a>
+                    </a><a href="/contact.html"
+                        class="text-white duration-300 group hover:text-[#C9BDAB] pb-1 relative transition-all">CONTACT
                         <span
-                            class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C9BDAB] transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a href="/about.html"
-                        class="relative group text-white pb-1 transition-all duration-300 hover:text-[#C9BDAB]">
-                        ABOUT US
-                        <span
-                            class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C9BDAB] transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a href="/contact.html"
-                        class="relative group text-white pb-1 transition-all duration-300 hover:text-[#C9BDAB]">
-                        CONTACT
-                        <span
-                            class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C9BDAB] transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a href="/contact.html"
-                        class="bg-[#C9BDAB] text-black py-2 px-4 rounded-xl transition-all duration-300 hover:bg-white hover:text-[#C9BDAB] hover:scale-105 shadow-md">
-                        Book a Visit
-                    </a>
-                </div>
-
-                <!-- Hamburger Icon -->
-                <button id="menuToggle" class="sm:hidden text-white text-3xl focus:outline-none">
-                    <i class="fas fa-bars"></i>
-                </button>
+                            class="duration-300 transition-all bg-[#C9BDAB] absolute bottom-0 group-hover:w-full h-[2px] left-0 w-0"></span>
+                    </a><a href="/contact.html"
+                        class="duration-300 transition-all hover:scale-105 hover:text-[#C9BDAB] bg-[#C9BDAB] hover:bg-white py-2 rounded-xl shadow-md text-black px-4">Book
+                        a Visit</a>
+                </div><button class="text-white text-3xl focus:outline-none sm:hidden" id="menuToggle"><i
+                        class="fas fa-bars"></i></button>
             </div>
         </nav>
-
-        <!-- Fullscreen Mobile Menu -->
-        <div id="mobileMenu"
-            class="fixed top-0 right-0 h-full w-full bg-black/90 backdrop-blur-sm transform translate-x-full transition-transform duration-300 ease-in-out z-50 flex flex-col p-6 space-y-6">
-
-            <!-- Logo + Close Button -->
-            <div class="flex items-center justify-between mb-6">
-                <a href="/index.html">
-                    <img src="/assets/images/logo.png" alt="Logo" class="w-32 h-auto" />
-                </a>
-                <button id="menuClose" class="text-white text-3xl">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-
-            <!-- Mobile Navigation -->
-            <nav class="flex flex-col items-center justify-center h-full space-y-6 text-xl text-white">
-                <a href="/real-estate.html"
-                    class="hover:text-[#C9BDAB] transition-all duration-300 hover:scale-105 tracking-wide">REAL
-                    ESTATE</a>
-                <a href="/about.html"
-                    class="hover:text-[#C9BDAB] transition-all duration-300 hover:scale-105 tracking-wide">ABOUT US</a>
+        <div class="flex flex-col w-full p-6 backdrop-blur-sm bg-black/90 duration-300 ease-in-out fixed h-full right-0 space-y-6 top-0 transform transition-transform translate-x-full z-50"
+            id="mobileMenu">
+            <div class="flex items-center justify-between mb-6"><a href="/index.html"><img src="/assets/images/logo.png"
+                        class="h-auto w-32" alt="Logo"> </a><button class="text-white text-3xl" id="menuClose"><i
+                        class="fas fa-times"></i></button></div>
+            <nav class="flex items-center flex-col justify-center text-white h-full space-y-6 text-xl"><a
+                    href="/real-estate.html"
+                    class="duration-300 transition-all hover:scale-105 hover:text-[#C9BDAB] tracking-wide">REAL
+                    ESTATE</a> <a href="/about.html"
+                    class="duration-300 transition-all hover:scale-105 hover:text-[#C9BDAB] tracking-wide">ABOUT
+                    US</a> <a href="/contact.html"
+                    class="duration-300 transition-all hover:scale-105 hover:text-[#C9BDAB] tracking-wide">CONTACT</a>
                 <a href="/contact.html"
-                    class="hover:text-[#C9BDAB] transition-all duration-300 hover:scale-105 tracking-wide">CONTACT</a>
-                <a href="/contact.html"
-                    class="mt-6 bg-[#C9BDAB] text-black py-2 px-6 rounded-xl hover:bg-white hover:text-[#C9BDAB] transition-all duration-300 hover:scale-105 shadow-md">
-                    Book a Visit
-                </a>
+                    class="duration-300 transition-all hover:scale-105 hover:text-[#C9BDAB] bg-[#C9BDAB] hover:bg-white py-2 rounded-xl shadow-md text-black mt-6 px-6">Book
+                    a Visit</a>
             </nav>
         </div>
     </section>
-
     <!-- ==================== NAVBAR & HAMBURGERMENU SECTION ==================== -->
 
-    <!-- ==================== HERO SECTION ==================== -->
-    <header class="relative h-screen overflow-hidden rounded-none mb-14">
-        <!-- Video Background -->
-        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-            <source src="/assets/videos/mortgage.mp4" type="video/mp4" />
+    <!-- ==================== HEADER SECTION ==================== -->
+    <header class="h-screen mb-14 overflow-hidden relative rounded-none">
+        <video autoplay class="w-full object-cover absolute h-full inset-0 z-0" loop muted playsinline>
+            <source src="/assets/videos/house.mp4" type="video/mp4">
         </video>
-
-        <!-- Hero Content -->
-        <div class="relative z-10 h-full flex flex-col justify-center items-center text-white text-center px-4">
+        <div class="flex items-center flex-col text-center justify-center h-full px-4 relative text-white z-10">
             <div class="mt-28 sm:mt-32">
-                <h1 class="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4">Be our Guest</h1>
-                <h4 class="text-lg sm:text-2xl lg:text-4xl mb-8 bg-white text-[#C9BDAB] p-3 px-6 sm:px-10 rounded-2xl">
-                    LIVE like a king in our best houses
-                </h4>
+                <h1 class="font-bold mb-4 lg:text-8xl sm:text-6xl text-4xl">Be our Guest</h1>
+                <h4 class="text-lg px-6 bg-white lg:text-4xl mb-8 p-3 rounded-2xl sm:px-10 sm:text-2xl text-[#C9BDAB]">
+                    LIVE like a king in our best houses</h4>
             </div>
         </div>
     </header>
-    <!-- ==================== HERO SECTION ==================== -->
+    <!-- ==================== HEADER SECTION ==================== -->
 
     <!-- ==================== MORTGAGE SECTION ==================== -->
-    <section class="relative min-h-[700px] grid grid-cols-1 lg:grid-cols-2 gap-4 px-6 py-16 bg-center "
-        style="background-image: url('/assets/images/mortgage.png')">
+    <section class="grid grid-cols-1 gap-4 bg-center lg:grid-cols-2 min-h-[700px] px-6 py-16 relative"
+        style="background-image:url(/assets/images/mortgage.png)">
+        <div class="absolute inset-0 z-0 backdrop-blur-sm bg-black/60"></div>
+        <div class="flex items-center justify-center z-10 relative">
+            <div class="w-full max-w-lg p-10 rounded-xl backdrop-blur bg-white/80 shadow-lg text-left">
+                <h2 class="mb-4 text-3xl font-serif text-gray-800">Why You Should Invest in Rental Properties</h2>
+                <p class="text-lg text-gray-700">We carefully select the most strategic cities for your investment,
+                    focusing on areas that combine cost-efficiency with high returns and strong value appreciation.
+                    Our goal is to provide you with a secure and profitable investment opportunity for the long
+                    term.
 
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm z-0"></div>
-
-        <!-- Text Section (sol) -->
-        <div class="relative z-10 flex items-center justify-center">
-            <div class="bg-white/80 backdrop-blur p-10 rounded-xl shadow-lg w-full max-w-lg text-left">
-                <h2 class="text-3xl font-serif text-gray-800 mb-4">Why You Should Invest in Rental Properties</h2>
-                <p class="text-gray-700 text-lg">
-                    Investing in rental properties yields a steady and substantial profit because it allows you to
-                    receive monthly cash flow and a stable ROI.
-                </p>
             </div>
         </div>
-
-        <!-- Mortgage Calculator (sağ) -->
-        <div class="relative z-10 flex items-center justify-center">
-            <div class="bg-black/75 p-10 rounded-xl text-white text-center w-full max-w-lg">
-                <h2 class="text-3xl font-bold mb-4">Mortgage Calculator</h2>
-                <p class="mb-4">Calculate your estimated monthly mortgage payment in USD.</p>
-
-                <form id="mortgageForm" class="flex flex-col gap-4">
-                    <input type="text" inputmode="numeric" id="price" placeholder="Home Price ($)" required
-                        class="p-2 rounded text-white bg-transparent border border-white placeholder-white" />
-                    <input type="text" inputmode="numeric" id="down" placeholder="Down Payment ($)" required
-                        class="p-2 rounded text-white bg-transparent border border-white placeholder-white" />
-                    <input type="text" inputmode="decimal" id="rate" placeholder="Interest Rate (%)" required
-                        class="p-2 rounded text-white bg-transparent border border-white placeholder-white" />
-                    <input type="text" inputmode="numeric" id="term" placeholder="Loan Term (years)" required
-                        class="p-2 rounded text-white bg-transparent border border-white placeholder-white" />
-                    <button type="submit"
-                        class="bg-[#C9BDAB] text-white py-2 rounded hover:bg-[#A89F8D] transition">Calculate</button>
-                </form>
-
-                <p id="result" class="mt-4 text-xl font-semibold"></p>
+        <div class="flex items-center justify-center z-10 relative">
+            <div class="text-white w-full bg-black/75 max-w-lg p-10 rounded-xl text-center">
+                <h2 class="font-bold mb-4 text-3xl">Mortgage Calculator</h2>
+                <p class="mb-4">Calculate your estimated monthly mortgage payment in USD.
+                <form class="flex flex-col gap-4" id="mortgageForm"><input
+                        class="text-white rounded bg-transparent border border-white p-2 placeholder-white"
+                        placeholder="Home Price ($)" id="price" inputmode="numeric" required> <input
+                        class="text-white rounded bg-transparent border border-white p-2 placeholder-white"
+                        placeholder="Down Payment ($)" id="down" inputmode="numeric" required> <input
+                        class="text-white rounded bg-transparent border border-white p-2 placeholder-white"
+                        placeholder="Interest Rate (%)" id="rate" inputmode="decimal" required> <input
+                        class="text-white rounded bg-transparent border border-white p-2 placeholder-white"
+                        placeholder="Loan Term (years)" id="term" inputmode="numeric" required> <button
+                        class="text-white transition bg-[#C9BDAB] hover:bg-[#A89F8D] py-2 rounded"
+                        type="submit">Calculate</button></form>
+                <p class="mt-4 text-xl font-semibold" id="result">
             </div>
         </div>
     </section>
     <!-- ==================== MORTGAGE SECTION ==================== -->
 
-    <!-- ==================== TOP PICK VILLAS SECTION ==================== -->
-    <section class="bg-[#f5f2f0]/50 py-24 px-4 text-center">
+    <!-- ==================== TOP VILLAS SECTION ==================== -->
+    <section class="bg-[#f5f2f0]/50 px-4 py-24 text-center">
         <div class="max-w-6xl mx-auto">
-            <!-- Title -->
             <div class="mb-12">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Top Pick Villas</h2>
-                <p class="text-base sm:text-lg text-gray-700">
-                    Curabitur efficitur ante vel mi bibendum, et maximus nisl ultricies. Morbi nec tempus dui, sit amet
-                    facilisis nisl. Ut vel urna quis urna tristique tempus. Etiam lobortis est at mauris eleifend, id
-                    tempor purus ultricies.
-                </p>
+                <h2 class="font-bold mb-4 text-3xl sm:text-4xl">Top Pick Villas</h2>
+                <p class="sm:text-lg text-base text-gray-700">Curabitur efficitur ante vel mi bibendum, et maximus
+                    nisl ultricies. Morbi nec tempus dui, sit amet facilisis nisl. Ut vel urna quis urna tristique
+                    tempus. Etiam lobortis est at mauris eleifend, id tempor purus ultricies.
             </div>
-
-            <!-- Cards Wrapper -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:grid-cols-3">
                 <div
-                    class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl cursor-pointer">
-
+                    class="duration-300 transition-all hover:scale-105 bg-white cursor-pointer hover:shadow-2xl overflow-hidden rounded-2xl shadow-lg transform">
                     <div class="relative">
-                        <!-- Etiket -->
                         <div
-                            class="absolute top-2 left-2 bg-[#f5e9d6] rounded-br-3xl
-                             text-xs font-semibold text-gray-600 px-4 py-2 shadow-lg drop-shadow-[0_12px_12px_rgba(0,0,0,0.25)] z-50">
-                            From <span class=" text-black">€280 / daily</span>
-                        </div>
-
-                        <!-- Swiper (Fotoğraf Alanı) -->
-                        <div class="swiper cardSwiper rounded-br-2xl">
+                            class="text-gray-600 font-semibold absolute bg-[#f5e9d6] drop-shadow-[0_12px_12px_rgba(0,0,0,0.25)] left-2 px-4 py-2 rounded-br-3xl shadow-lg text-xs top-2 z-50">
+                            From <span class="text-black">€280 / daily</span></div>
+                        <div class="cardSwiper rounded-br-2xl swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="https://picsum.photos/id/1011/400/300" class="w-full h-64 object-cover" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://picsum.photos/id/1015/400/300" class="w-full h-64 object-cover" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://picsum.photos/id/1016/400/300" class="w-full h-64 object-cover" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://picsum.photos/id/1018/400/300" class="w-full h-64 object-cover" />
-                                </div>
+                                <div class="swiper-slide"><img src="https://picsum.photos/id/1011/400/300"
+                                        class="w-full object-cover h-64"></div>
+                                <div class="swiper-slide"><img src="https://picsum.photos/id/1015/400/300"
+                                        class="w-full object-cover h-64"></div>
+                                <div class="swiper-slide"><img src="https://picsum.photos/id/1016/400/300"
+                                        class="w-full object-cover h-64"></div>
+                                <div class="swiper-slide"><img src="https://picsum.photos/id/1018/400/300"
+                                        class="w-full object-cover h-64"></div>
                             </div>
-                            <div class="swiper-pagination absolute bottom-2 left-0 right-0"></div>
-                        </div>
-
-                        <!-- Beğen Butonu -->
-                        <button
-                            class="absolute top-2 right-2 bg-white rounded-full p-2 shadow hover:scale-110 transition z-50 cursor-pointer">
-                            ❤️
-                        </button>
+                            <div class="absolute left-0 bottom-2 right-0 swiper-pagination"></div>
+                        </div><button
+                            class="transition rounded-full absolute bg-white cursor-pointer hover:scale-110 p-2 right-2 shadow top-2 z-50">❤️</button>
                     </div>
-
-                    <!-- Alt İçerik -->
                     <div class="p-4 text-left">
-                        <p class="text-gray-600 mb-1">
-                            <span class="font-bold text-black">Italy</span> • <span>Mountains</span>
-                        </p>
-                        <h3 class="text-lg font-semibold mb-4">Villa in the Mountains</h3>
-                        <div class="grid grid-cols-2 gap-3 text-sm text-gray-600">
+                        <p class="text-gray-600 mb-1"><span class="font-bold text-black">Italy</span> •
+                            <span>Mountains</span>
+                        <h3 class="mb-4 font-semibold text-lg">Villa in the Mountains</h3>
+                        <div class="text-gray-600 text-sm gap-3 grid grid-cols-2">
                             <div class="flex items-center gap-2">👥 4 Guests</div>
                             <div class="flex items-center gap-2">🚰 2 Bathrooms</div>
                             <div class="flex items-center gap-2">📊 460 m²</div>
@@ -259,53 +178,32 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 1 -->
-
-                <!-- Card 2 -->
                 <div
-                    class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl cursor-pointer">
-
+                    class="duration-300 transition-all hover:scale-105 bg-white cursor-pointer hover:shadow-2xl overflow-hidden rounded-2xl shadow-lg transform">
                     <div class="relative">
-                        <!-- Etiket -->
                         <div
-                            class="absolute top-2 left-2 bg-[#f5e9d6] rounded-br-3xl
-                             text-xs font-semibold text-gray-600 px-4 py-2 shadow-lg drop-shadow-[0_12px_12px_rgba(0,0,0,0.25)] z-50">
-                            From <span class=" text-black">€280 / daily</span>
-                        </div>
-
-                        <!-- Swiper (Fotoğraf Alanı) -->
-                        <div class="swiper cardSwiper rounded-br-2xl">
+                            class="text-gray-600 font-semibold absolute bg-[#f5e9d6] drop-shadow-[0_12px_12px_rgba(0,0,0,0.25)] left-2 px-4 py-2 rounded-br-3xl shadow-lg text-xs top-2 z-50">
+                            From <span class="text-black">€280 / daily</span></div>
+                        <div class="cardSwiper rounded-br-2xl swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="https://picsum.photos/id/1011/400/300" class="w-full h-64 object-cover" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://picsum.photos/id/1015/400/300" class="w-full h-64 object-cover" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://picsum.photos/id/1016/400/300" class="w-full h-64 object-cover" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://picsum.photos/id/1018/400/300" class="w-full h-64 object-cover" />
-                                </div>
+                                <div class="swiper-slide"><img src="https://picsum.photos/id/1011/400/300"
+                                        class="w-full object-cover h-64"></div>
+                                <div class="swiper-slide"><img src="https://picsum.photos/id/1015/400/300"
+                                        class="w-full object-cover h-64"></div>
+                                <div class="swiper-slide"><img src="https://picsum.photos/id/1016/400/300"
+                                        class="w-full object-cover h-64"></div>
+                                <div class="swiper-slide"><img src="https://picsum.photos/id/1018/400/300"
+                                        class="w-full object-cover h-64"></div>
                             </div>
-                            <div class="swiper-pagination absolute bottom-2 left-0 right-0"></div>
-                        </div>
-
-                        <!-- Beğen Butonu -->
-                        <button
-                            class="absolute top-2 right-2 bg-white rounded-full p-2 shadow hover:scale-110 transition z-50 cursor-pointer">
-                            ❤️
-                        </button>
+                            <div class="absolute left-0 bottom-2 right-0 swiper-pagination"></div>
+                        </div><button
+                            class="transition rounded-full absolute bg-white cursor-pointer hover:scale-110 p-2 right-2 shadow top-2 z-50">❤️</button>
                     </div>
-
-                    <!-- Alt İçerik -->
                     <div class="p-4 text-left">
-                        <p class="text-gray-600 mb-1">
-                            <span class="font-bold text-black">Italy</span> • <span>Mountains</span>
-                        </p>
-                        <h3 class="text-lg font-semibold mb-4">Villa in the Mountains</h3>
-                        <div class="grid grid-cols-2 gap-3 text-sm text-gray-600">
+                        <p class="text-gray-600 mb-1"><span class="font-bold text-black">Italy</span> •
+                            <span>Mountains</span>
+                        <h3 class="mb-4 font-semibold text-lg">Villa in the Mountains</h3>
+                        <div class="text-gray-600 text-sm gap-3 grid grid-cols-2">
                             <div class="flex items-center gap-2">👥 4 Guests</div>
                             <div class="flex items-center gap-2">🚰 2 Bathrooms</div>
                             <div class="flex items-center gap-2">📊 460 m²</div>
@@ -313,53 +211,32 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 2 -->
-
-                <!-- Card 3 -->
                 <div
-                    class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl cursor-pointer">
-
+                    class="duration-300 transition-all hover:scale-105 bg-white cursor-pointer hover:shadow-2xl overflow-hidden rounded-2xl shadow-lg transform">
                     <div class="relative">
-                        <!-- Etiket -->
                         <div
-                            class="absolute top-2 left-2 bg-[#f5e9d6] rounded-br-3xl
-                             text-xs font-semibold text-gray-600 px-4 py-2 shadow-lg drop-shadow-[0_12px_12px_rgba(0,0,0,0.25)] z-50">
-                            From <span class=" text-black">€280 / daily</span>
-                        </div>
-
-                        <!-- Swiper (Fotoğraf Alanı) -->
-                        <div class="swiper cardSwiper rounded-br-2xl">
+                            class="text-gray-600 font-semibold absolute bg-[#f5e9d6] drop-shadow-[0_12px_12px_rgba(0,0,0,0.25)] left-2 px-4 py-2 rounded-br-3xl shadow-lg text-xs top-2 z-50">
+                            From <span class="text-black">€280 / daily</span></div>
+                        <div class="cardSwiper rounded-br-2xl swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="https://picsum.photos/id/1011/400/300" class="w-full h-64 object-cover" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://picsum.photos/id/1015/400/300" class="w-full h-64 object-cover" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://picsum.photos/id/1016/400/300" class="w-full h-64 object-cover" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://picsum.photos/id/1018/400/300" class="w-full h-64 object-cover" />
-                                </div>
+                                <div class="swiper-slide"><img src="https://picsum.photos/id/1011/400/300"
+                                        class="w-full object-cover h-64"></div>
+                                <div class="swiper-slide"><img src="https://picsum.photos/id/1015/400/300"
+                                        class="w-full object-cover h-64"></div>
+                                <div class="swiper-slide"><img src="https://picsum.photos/id/1016/400/300"
+                                        class="w-full object-cover h-64"></div>
+                                <div class="swiper-slide"><img src="https://picsum.photos/id/1018/400/300"
+                                        class="w-full object-cover h-64"></div>
                             </div>
-                            <div class="swiper-pagination absolute bottom-2 left-0 right-0"></div>
-                        </div>
-
-                        <!-- Beğen Butonu -->
-                        <button
-                            class="absolute top-2 right-2 bg-white rounded-full p-2 shadow hover:scale-110 transition z-50 cursor-pointer">
-                            ❤️
-                        </button>
+                            <div class="absolute left-0 bottom-2 right-0 swiper-pagination"></div>
+                        </div><button
+                            class="transition rounded-full absolute bg-white cursor-pointer hover:scale-110 p-2 right-2 shadow top-2 z-50">❤️</button>
                     </div>
-
-                    <!-- Alt İçerik -->
                     <div class="p-4 text-left">
-                        <p class="text-gray-600 mb-1">
-                            <span class="font-bold text-black">Italy</span> • <span>Mountains</span>
-                        </p>
-                        <h3 class="text-lg font-semibold mb-4">Villa in the Mountains</h3>
-                        <div class="grid grid-cols-2 gap-3 text-sm text-gray-600">
+                        <p class="text-gray-600 mb-1"><span class="font-bold text-black">Italy</span> •
+                            <span>Mountains</span>
+                        <h3 class="mb-4 font-semibold text-lg">Villa in the Mountains</h3>
+                        <div class="text-gray-600 text-sm gap-3 grid grid-cols-2">
                             <div class="flex items-center gap-2">👥 4 Guests</div>
                             <div class="flex items-center gap-2">🚰 2 Bathrooms</div>
                             <div class="flex items-center gap-2">📊 460 m²</div>
@@ -367,304 +244,224 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 3 -->
             </div>
-            <!-- Cards Wrapper -->
-
         </div>
     </section>
     <style>
         .swiper-pagination-bullet {
-            background-color: white !important;
-            opacity: 0.5;
-            transition: all 0.3s ease;
+            background-color: #fff !important;
+            opacity: .5;
+            transition: all .3s ease
         }
 
         .swiper-pagination-bullet-active {
-            opacity: 1;
+            opacity: 1
         }
     </style>
-    <!-- ==================== TOP PICK VILLAS SECTION ==================== -->
+    <!-- ==================== TOP VILLAS SECTION ==================== -->
 
-    <!-- ==================== OUR REGIONS SECTION ==================== -->
-    <section class="bg-[#c9bdab] rounded-br-[200px] px-12 lg:px-6 py-20 sm-p-19 ">
+    <!-- ==================== REGIONS SECTION ==================== -->
+
+    <section class="bg-[#c9bdab] lg:px-6 px-12 py-20 rounded-br-[200px] sm-p-19">
         <div class="regionsWrapper max-w-7xl mx-auto">
-            <div class="text-center mb-12 md:w-1/2 mx-auto">
-                <h1 class="text-5xl! sm:text-2xl font-bold mb-5">Our Regions</h1>
-                <p class="text-base sm:text-lg text-xl! text-[#181D24]">Fusce blandit magna eget felis dapibus, ac
-                    lacinia quam
-                    faucibus. Quisque feugiat felis a quam volutpat, non scelerisque nibh scelerisque.</p>
+            <div class="mb-12 md:w-1/2 mx-auto text-center">
+                <h1 class="font-bold mb-5 sm:text-2xl text-5xl!">Our Regions</h1>
+                <p class="sm:text-lg text-base text-[#181D24] text-xl!">Fusce blandit magna eget felis dapibus, ac
+                    lacinia quam faucibus. Quisque feugiat felis a quam volutpat, non scelerisque nibh scelerisque.
             </div>
-
-            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <!-- Card 1 -->
-                <div style="background-image: url('/assets/images/region.jpg');"
-                    class="relative h-[450px]! sm:h-[300px] w-full! sm:w-1/2 lg:w-full bg-cover bg-center text-white rounded-bl-4xl rounded-tr-4xl overflow-hidden">
-                    <div class="absolute bottom-4 left-4 text-left p-4 rounded-xl">
-                        <h1 class="text-3xl! sm:text-xl font-bold">Mountains</h1>
-                        <p class="text-sm sm:text-base text-gray-300 "><span class="font-bold! text-white">87</span>
-                            properties</p>
+            <div class="flex items-center flex-col justify-center gap-6 sm:flex-row">
+                <div class="text-white relative bg-center bg-cover h-[450px]! lg:w-full overflow-hidden rounded-bl-4xl rounded-tr-4xl sm:h-[300px] sm:w-1/2 w-full!"
+                    style="background-image:url(/assets/images/region.jpg)">
+                    <div class="absolute bottom-4 left-4 p-4 rounded-xl text-left">
+                        <h1 class="font-bold sm:text-xl text-3xl!">Mountains</h1>
+                        <p class="sm:text-base text-sm text-gray-300"><span class="text-white font-bold!">87</span>
+                            properties
                     </div>
                 </div>
-
-                <!-- Card 2 -->
-                <div style="background-image: url('/assets/images/region2.jpg');"
-                    class="relative h-[450px]! sm:h-[300px] w-full sm:w-1/2 lg:w-full bg-cover bg-center text-white rounded-bl-4xl rounded-tr-4xl overflow-hidden">
-                    <div class="absolute bottom-4 left-4 text-left p-4 rounded-xl">
-                        <h1 class="text-3xl! sm:text-xl font-bold">Coastline</h1>
-                        <p class="text-sm sm:text-base text-gray-300 "><span class="font-bold! text-white">64</span>
-                            properties</p>
+                <div class="text-white relative bg-center bg-cover h-[450px]! lg:w-full overflow-hidden rounded-bl-4xl rounded-tr-4xl sm:h-[300px] sm:w-1/2 w-full"
+                    style="background-image:url(/assets/images/region2.jpg)">
+                    <div class="absolute bottom-4 left-4 p-4 rounded-xl text-left">
+                        <h1 class="font-bold sm:text-xl text-3xl!">Coastline</h1>
+                        <p class="sm:text-base text-sm text-gray-300"><span class="text-white font-bold!">64</span>
+                            properties
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ==================== OUR REGIONS SECTION ==================== -->
+    <!-- ==================== REGIONS SECTION ==================== -->
 
-    <!-- ==================== OUR SPECIALITIES SECTION ==================== -->
+    <!-- ==================== SPECIALITIES SECTION ==================== -->
     <section>
-        <div class="text-center lg:mt-24 forEach mt-12">
+        <div class="lg:mt-24 forEach mt-12 text-center">
             <h1 class="lg:text-5xl text-2xl">Our properties specialities</h1>
         </div>
         <div
-            class="specialitiesWrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 max-w-6xl mx-auto py-16 lg:py-36 px-6">
-
+            class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:grid-cols-5 lg:py-36 max-w-6xl mx-auto px-6 py-16 specialitiesWrapper">
             <div
-                class="wrapperItem flex flex-col items-center sm:items-start text-center border-b sm:border-b-0 sm:border-r border-[#C9BDAB] pb-6 sm:pb-0 sm:pr-6">
-                <img class="mb-5" src="/assets/images/icon1.jpg" width="35" alt="">
-                <h2 class="lg:text-2xl font-bold mb-2">Seafront</h2>
-                <p class="lg:text-base text-gray-600">Have a Look</p>
+                class="flex items-center flex-col text-center border-[#C9BDAB] border-b pb-6 sm:border-b-0 sm:border-r sm:items-start sm:pb-0 sm:pr-6 wrapperItem">
+                <img src="/assets/images/icon1.jpg" class="mb-5" alt="" width="35">
+                <h2 class="font-bold lg:text-2xl mb-2">Seafront</h2>
+                <p class="text-gray-600 lg:text-base">Have a Look
             </div>
-
             <div
-                class="wrapperItem flex flex-col items-center sm:items-start text-center border-b sm:border-b-0 sm:border-r border-[#C9BDAB] pb-6 sm:pb-0 sm:pr-6">
-                <img class="mb-5" src="/assets/images/icon2.jpg" width="35" alt="">
-                <h2 class="lg:text-2xl font-bold mb-2">Pet friendly</h2>
-                <p class="lg:text-base text-gray-600">Pets allowed</p>
+                class="flex items-center flex-col text-center border-[#C9BDAB] border-b pb-6 sm:border-b-0 sm:border-r sm:items-start sm:pb-0 sm:pr-6 wrapperItem">
+                <img src="/assets/images/icon2.jpg" class="mb-5" alt="" width="35">
+                <h2 class="font-bold lg:text-2xl mb-2">Pet friendly</h2>
+                <p class="text-gray-600 lg:text-base">Pets allowed
             </div>
-
             <div
-                class="wrapperItem flex flex-col items-center sm:items-start text-center border-b sm:border-b-0 sm:border-r border-[#C9BDAB] pb-6 sm:pb-0 sm:pr-6">
-                <img class="mb-5" src="/assets/images/icon3.jpg" width="35" alt="">
-                <h2 class="lg:text-2xl font-bold mb-2">Electric car</h2>
-                <p class="lg:text-base text-gray-600">Charge your car</p>
+                class="flex items-center flex-col text-center border-[#C9BDAB] border-b pb-6 sm:border-b-0 sm:border-r sm:items-start sm:pb-0 sm:pr-6 wrapperItem">
+                <img src="/assets/images/icon3.jpg" class="mb-5" alt="" width="35">
+                <h2 class="font-bold lg:text-2xl mb-2">Electric car</h2>
+                <p class="text-gray-600 lg:text-base">Charge your car
             </div>
-
             <div
-                class="wrapperItem flex flex-col items-center sm:items-start text-center border-b sm:border-b-0 sm:border-r border-[#C9BDAB] pb-6 sm:pb-0 sm:pr-6">
-                <img class="mb-5" src="/assets/images/icon4.jpg" width="35" alt="">
-                <h2 class="lg:text-2xl font-bold mb-2">Fitness/Gym</h2>
-                <p class="lg:text-base text-gray-600">Work out</p>
+                class="flex items-center flex-col text-center border-[#C9BDAB] border-b pb-6 sm:border-b-0 sm:border-r sm:items-start sm:pb-0 sm:pr-6 wrapperItem">
+                <img src="/assets/images/icon4.jpg" class="mb-5" alt="" width="35">
+                <h2 class="font-bold lg:text-2xl mb-2">Fitness/Gym</h2>
+                <p class="text-gray-600 lg:text-base">Work out
             </div>
-
             <div
-                class="wrapperItem flex flex-col items-center sm:items-start text-center border-b sm:border-b-0 sm:border-r border-[#C9BDAB] pb-6 sm:pb-0 sm:pr-6">
-                <img class="mb-5" src="/assets/images/icon5.jpg" width="35" alt="">
-                <h2 class="lg:text-2xl font-bold mb-2">Boat mooring</h2>
-                <p class="lg:text-base text-gray-600">Take a trip</p>
+                class="flex items-center flex-col text-center border-[#C9BDAB] border-b pb-6 sm:border-b-0 sm:border-r sm:items-start sm:pb-0 sm:pr-6 wrapperItem">
+                <img src="/assets/images/icon5.jpg" class="mb-5" alt="" width="35">
+                <h2 class="font-bold lg:text-2xl mb-2">Boat mooring</h2>
+                <p class="text-gray-600 lg:text-base">Take a trip
             </div>
-
         </div>
-
-
-
-
     </section>
-    <!-- ==================== OUR SPECIALITIES SECTION ==================== -->
-
-    <!-- ==================== JOIN SECTION ==================== -->
-    <section style="background-image: url('/assets/images/join.png');"
-        class="bg-cover bg-center py-20 px-4 text-white w-full lg:h-250 h-100  flex items-center justify-center mb-20">
-
+    <!-- ==================== SPECIALITIES SECTION ==================== -->
+    <section
+        class="flex items-center justify-center text-white px-4 bg-center bg-cover h-100 lg:h-250 mb-20 py-20 w-full"
+        style="background-image:url(/assets/images/join.png)">
         <div
-            class="flex flex-col forEach items-center py-10 justify-center text-center bg-white/30 backdrop-blur rounded-2xl shadow-lg rounded-tl-[100px] rounded-br-[100px]">
-            <h2 class="text-gray-800 lg:text-2xl text-xl">Become a Host</h2>
-            <h1 class="text-2xl lg:text-5xl font-bold mb-4 text-[#181D24]">Become a host</h1>
-            <p class="text-base sm:text-lg mb-6 w-4/6">
-                Join the elite league of hosts specializing in luxury villas and unlock a world of exclusive
-                opportunities.
-            </p>
-            <a href="/contact.html"
-                class="bg-[#C9BDAB] text-white px-6 py-3 rounded-full w-2/3 text-lg font-semibold hover:bg-[#A89F8D] transition duration-300">Join
+            class="flex items-center flex-col text-center justify-center backdrop-blur bg-white/30 forEach py-10 rounded-2xl rounded-br-[100px] rounded-tl-[100px] shadow-lg">
+            <h2 class="lg:text-2xl text-gray-800 text-xl">Become a Host</h2>
+            <h1 class="font-bold mb-4 text-2xl text-[#181D24] lg:text-5xl">Become a host</h1>
+            <p class="mb-6 sm:text-lg text-base w-4/6">Join the elite league of hosts specializing in luxury villas
+                and unlock a world of exclusive opportunities.</p><a href="/contact.html"
+                class="text-white duration-300 transition bg-[#C9BDAB] hover:bg-[#A89F8D] py-3 font-semibold px-6 rounded-full text-lg w-2/3">Join
                 Today</a>
         </div>
     </section>
     <!-- ==================== JOIN SECTION ==================== -->
-
-    <!-- ==================== ABOUT SECTION ==================== -->
-    <section class="py-16 px-4 max-w-7xl mx-auto mt-20 sm:mb-14 lg:mb-30">
-        <div class="grid md:grid-cols-2 gap-10 items-center mb-20">
-            <!-- Text Content -->
+    <section class="py-16 mx-auto lg:mb-30 max-w-7xl mt-20 px-4 sm:mb-14">
+        <div class="items-center mb-20 gap-10 grid md:grid-cols-2">
             <div>
-                <h1 class="text-3xl sm:text-4xl font-bold mb-4">About us</h1>
-                <p class="text-base sm:text-lg text-gray-700 mb-6">
-                    Curabitur efficitur ante vel mi bibendum, et maximus nisl ultricies. Morbi nec tempus dui, sit amet
-                    facilisis nisl. Etiam lobortis est at mauris eleifend, id tempor purus ultricies. Curabitur
-                    efficitur luctus
-                    enim nec sollicitudin. Fusce venenatis venenatis lorem eu accumsan.
-                </p>
+                <h1 class="font-bold mb-4 text-3xl sm:text-4xl">About us</h1>
+                <p class="mb-6 sm:text-lg text-base text-gray-700">Curabitur efficitur ante vel mi bibendum, et
+                    maximus nisl ultricies. Morbi nec tempus dui, sit amet facilisis nisl. Etiam lobortis est at
+                    mauris eleifend, id tempor purus ultricies. Curabitur efficitur luctus enim nec sollicitudin.
+                    Fusce venenatis venenatis lorem eu accumsan.
                 <h3
-                    class="text-lg sm:text-xl text-center font-semibold bg-[#DFE3E7] py-6 px-4 rounded-2xl shadow-lg mt-10">
-                    We strive to offer you the best possible homes to stay.
-                </h3>
+                    class="text-lg font-semibold bg-[#DFE3E7] mt-10 px-4 py-6 rounded-2xl shadow-lg sm:text-xl text-center">
+                    We strive to offer you the best possible homes to stay.</h3>
             </div>
-
-            <!-- Images -->
-            <div class="flex flex-col sm:relative sm:min-h-[450] items-center gap-6">
-                <!-- Sol üstteki görsel -->
-                <img src="/assets/images/aboutImage.jpg" alt="About Us" style="width: 350px;"
-                    class="sm:absolute sm:top-0 sm:left-0 rounded-xl shadow-md z-10" />
-
-                <!-- Alttaki görsel -->
-                <img src="/assets/images/aboutImage2.jpg" alt="About Us" style="width: 400px;"
-                    class="sm:relative sm:ml-24 sm:mt-24 md:top-50 md:left-30 rounded-xl shadow-lg z-0" />
-            </div>
+            <div class="flex items-center flex-col sm:min-h-[450] gap-6 sm:relative"><img
+                    src="/assets/images/aboutImage.jpg" class="sm:absolute rounded-xl shadow-md sm:left-0 sm:top-0 z-10"
+                    alt="About Us" style="width:350px"> <img src="/assets/images/aboutImage2.jpg"
+                    class="md:left-30 md:top-50 rounded-xl shadow-lg sm:ml-24 sm:mt-24 sm:relative z-0" alt="About Us"
+                    style="width:400px"></div>
         </div>
     </section>
-    <!-- ==================== ABOUT SECTION ==================== -->
+    <!-- ==================== JOIN SECTION ==================== -->
 
     <!-- ==================== FOOTER SECTION ==================== -->
     <footer>
-        <div class="footerWrapper w-full relative">
-            <!-- Background Image -->
-            <div class="footerImage">
-                <img src="/assets/images/footer.jpg" alt="Footer Image" class="w-full lg:h-200 object-cover">
-            </div>
-
-            <!-- Contact Form -->
+        <div class="w-full relative footerWrapper">
+            <div class="footerImage"><img src="/assets/images/footer.jpg" class="w-full object-cover lg:h-200"
+                    alt="Footer Image"></div>
             <div
-                class="contactForm lg:absolute lg:top-70 inset-0 flex items-center justify-center px-4 z-10 pointer-events-none">
+                class="flex items-center justify-center z-10 px-4 contactForm inset-0 lg:absolute lg:top-70 pointer-events-none">
                 <div
-                    class="flex flex-col lg:flex-row gap-8 bg-[#181D24] text-white rounded-tl-[100px] rounded-br-[75px] overflow-hidden w-full max-w-6xl mx-auto pointer-events-auto">
-                    <!-- Left Side -->
+                    class="flex flex-col w-full lg:flex-row mx-auto bg-[#181D24] gap-8 max-w-6xl overflow-hidden pointer-events-auto rounded-br-[75px] rounded-tl-[100px] text-white">
                     <div
-                        class="contactSide w-full lg:w-1/2 p-6 sm:p-8 text-center flex flex-col items-center justify-center">
-                        <h1 class="text-3xl sm:text-5xl font-bold mb-6">Let's Connect</h1>
-                        <div class="contactWrapper space-y-4 text-sm sm:text-base">
-                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center">
-                                <h3 class="font-semibold">Phone:</h3>
-                                <a href="tel:+0000000000" class="hover:text-clifford transition">+00 000 000 00</a>
+                        class="flex items-center flex-col text-center justify-center contactSide lg:w-1/2 p-6 sm:p-8 w-full">
+                        <h1 class="font-bold text-3xl mb-6 sm:text-5xl">Let's Connect</h1>
+                        <div class="sm:text-base text-sm contactWrapper space-y-4">
+                            <div class="flex items-center flex-col sm:flex-row gap-2 sm:gap-4">
+                                <h3 class="font-semibold">Phone:</h3><a href="tel:+0000000000"
+                                    class="transition hover:text-clifford">+00 000 000 00</a>
                             </div>
-                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center">
-                                <h3 class="font-semibold">Email:</h3>
-                                <a href="mailto:adfada@hotmail.com"
-                                    class="hover:text-clifford transition">adfada@hotmail.com</a>
+                            <div class="flex items-center flex-col sm:flex-row gap-2 sm:gap-4">
+                                <h3 class="font-semibold">Email:</h3><a href="mailto:adfada@hotmail.com"
+                                    class="transition hover:text-clifford">adfada@hotmail.com</a>
                             </div>
-                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center">
-                                <h3 class="font-semibold">Address:</h3>
-                                <a href="#" class="hover:text-clifford transition">123 Main Street, City</a>
+                            <div class="flex items-center flex-col sm:flex-row gap-2 sm:gap-4">
+                                <h3 class="font-semibold">Address:</h3><a href="#"
+                                    class="transition hover:text-clifford">123 Main Street, City</a>
                             </div>
-                            <div class="contactSocial flex gap-4 mt-4 text-xl items-center justify-center">
-                                <a href="https://facebook.com" target="_blank" class="hover:text-[#C9BDAB] transition">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="https://twitter.com" target="_blank" class="hover:text-[#C9BDAB] transition">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="https://instagram.com" target="_blank" class="hover:text-[#C9BDAB] transition">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://linkedin.com" target="_blank" class="hover:text-[#C9BDAB] transition">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
+                            <div class="flex items-center justify-center gap-4 contactSocial mt-4 text-xl"><a
+                                    href="https://facebook.com" class="transition hover:text-[#C9BDAB]"
+                                    target="_blank"><i class="fab fa-facebook-f"></i> </a><a href="https://twitter.com"
+                                    class="transition hover:text-[#C9BDAB]" target="_blank"><i
+                                        class="fab fa-twitter"></i> </a><a href="https://instagram.com"
+                                    class="transition hover:text-[#C9BDAB]" target="_blank"><i
+                                        class="fab fa-instagram"></i> </a><a href="https://linkedin.com"
+                                    class="transition hover:text-[#C9BDAB]" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a></div>
                         </div>
                     </div>
-
-                    <!-- Right Side -->
-                    <div class="formSide w-full lg:w-1/2 p-6 sm:p-8 bg-white text-black">
-                        <form class="p-4 sm:p-6 rounded-lg shadow-md">
-                            <h2 class="text-2xl font-bold mb-4 text-[#181D24]">Contact Us</h2>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                                <input type="text" placeholder="Your Name"
-                                    class="p-3 border border-gray-300 rounded-lg" />
-                                <input type="email" placeholder="Your Email"
-                                    class="p-3 border border-gray-300 rounded-lg" />
-                            </div>
-                            <textarea placeholder="Your Message"
-                                class="w-full p-3 border border-gray-300 rounded-lg mb-4"></textarea>
-                            <button type="submit"
-                                class="w-full bg-[#C9BDAB] text-white py-3 rounded-lg hover:bg-[#A89F8D] transition duration-300">Send
-                                Message</button>
+                    <div class="w-full p-6 lg:w-1/2 sm:p-8 bg-white formSide text-black">
+                        <form class="p-4 rounded-lg shadow-md sm:p-6">
+                            <h2 class="font-bold mb-4 text-2xl text-[#181D24]">Contact Us</h2>
+                            <div class="mb-4 gap-4 grid grid-cols-1 sm:grid-cols-2"><input
+                                    class="border border-gray-300 p-3 rounded-lg" placeholder="Your Name"> <input
+                                    class="border border-gray-300 p-3 rounded-lg" placeholder="Your Email" type="email">
+                            </div><textarea class="w-full rounded-lg border border-gray-300 mb-4 p-3"
+                                placeholder="Your Message"></textarea> <button
+                                class="text-white duration-300 transition bg-[#C9BDAB] hover:bg-[#A89F8D] py-3 rounded-lg w-full"
+                                type="submit">Send Message</button>
                         </form>
                     </div>
-
                 </div>
             </div>
-            <!-- Contact Form -->
-
-            <!-- Footer Content -->
-            <div class="footerContent bg-[#d9dde1] py-10  ">
+            <div class="bg-[#d9dde1] footerContent py-10">
                 <div
-                    class="footerText w-full items-start  lg:mt-50 px-6 md:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-20 z-50">
-                    <!-- Left Column -->
+                    class="flex flex-col w-full lg:flex-row mx-auto footerText gap-10 items-start lg:gap-20 lg:mt-50 max-w-7xl md:px-8 px-6 z-50">
                     <div class="flex-1">
-                        <h2 class="text-gray-600 mb-4 text-xl font-semibold">Luxury RENTALS</h2>
-                        <p class="text-gray-600">
-                            We are a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </p>
+                        <h2 class="text-gray-600 font-semibold mb-4 text-xl">Luxury RENTALS</h2>
+                        <p class="text-gray-600">We are a lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
-
-                    <!-- Center Column (Links) -->
                     <div class="flex-1">
-                        <h2 class="text-gray-600 mb-4 text-xl font-semibold">Legal</h2>
-                        <div class="flex flex-col gap-2 text-sm">
-                            <a href="#" class="text-gray-600 hover:text-black">Terms & Conditions</a>
-                            <a href="#" class="text-gray-600 hover:text-black">Privacy Notice and Cookies</a>
-                            <a href="#" class="text-gray-600 hover:text-black">Imprint</a>
-                        </div>
+                        <h2 class="text-gray-600 font-semibold mb-4 text-xl">Legal</h2>
+                        <div class="flex flex-col gap-2 text-sm"><a href="#"
+                                class="text-gray-600 hover:text-black">Terms & Conditions</a> <a href="#"
+                                class="text-gray-600 hover:text-black">Privacy Notice and Cookies</a> <a href="#"
+                                class="text-gray-600 hover:text-black">Imprint</a></div>
                     </div>
-
-                    <!-- Right Column (Contact + Social) -->
                     <div class="flex-1 items-start">
-                        <h2 class="text-black font-bold mb-4 text-xl">Connect With Us</h2>
-                        <div class="flex flex-col gap-2 text-sm text-gray-600 mb-4">
-                            <a href="#" class="hover:text-[#C9BDAB]">+00 000 000 00</a>
-                            <a href="#" class="hover:text-[#C9BDAB]">info@luxuryrentals.com</a>
+                        <h2 class="font-bold mb-4 text-black text-xl">Connect With Us</h2>
+                        <div class="flex flex-col gap-2 text-sm mb-4 text-gray-600"><a href="#"
+                                class="hover:text-[#C9BDAB]">+00 000 000 00</a> <a href="#"
+                                class="hover:text-[#C9BDAB]">info@luxuryrentals.com</a></div>
+                        <div class="flex gap-4 text-xl text-gray-600"><a href="#"
+                                class="transition hover:text-blue-600"><i class="fab fa-facebook-f"></i></a> <a href="#"
+                                class="transition hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="transition hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="transition hover:text-blue-700"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                        <div class="flex gap-4 text-xl text-gray-600">
-                            <a href="#" class="hover:text-blue-600 transition"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="hover:text-pink-600 transition"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="hover:text-blue-700 transition"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <p class="text-gray-600 mt-4 text-xs">© 2023 Elsewhere. All rights reserved.</p>
+                        <p class="text-gray-600 text-xs mt-4">© 2023 Elsewhere. All rights reserved.
                     </div>
                 </div>
             </div>
-            <!-- Footer Content -->
-
-
-
         </div>
     </footer>
     <!-- ==================== FOOTER SECTION ==================== -->
 
-    <!-- ==================== DevPixel Attribition ==================== -->
-    <div class="flex flex-col items-center justify-center bg-black/75 text-white p-3">
-        <div class="flex items-center justify-center gap-4 text-center text-sm text-white border-t border-gray-200">
-            Designed with ❤️ by <a href="https://devpiksel.com" target="_blank"
-                class="text-clifford font-semibold hover:underline">
-                <img src="/assets/images/devpixel-logo.png" width="100" height="100" alt="">
-            </a>
+    <!-- ==================== DEVPIXEL ATTRIBITION ==================== -->
+    <div class="flex items-center flex-col justify-center text-white bg-black/75 p-3">
+        <div class="flex items-center justify-center text-white border-gray-200 border-t gap-4 text-center text-sm">
+            Designed with ❤️ by <a href="https://devpiksel.com" class="hover:underline font-semibold text-clifford"
+                target="_blank"><img src="/assets/images/devpixel-logo.png" alt="" width="100" height="100"></a>
         </div>
-        <div class="devPixelSocial flex items-center justify-center gap-4 mt-2">
-            <a href="https://devpiksel.com" target="_blank"
-                class="text-white hover:text-green-500 transition duration-300">
-                <i class="fa fa-link" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.instagram.com/devpixeltech/" target="_blank"
-                class="text-white hover:text-pink-600 transition duration-300">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/devpixel-tech" target="_blank"
-                class="text-white hover:text-blue-700 transition duration-300">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>
+        <div class="flex items-center justify-center gap-4 devPixelSocial mt-2"><a href="https://devpiksel.com"
+                class="text-white duration-300 transition hover:text-green-500" target="_blank"><i class="fa fa-link"
+                    aria-hidden="true"></i> </a><a href="https://www.instagram.com/devpixeltech/"
+                class="text-white duration-300 transition hover:text-pink-600" target="_blank"><i
+                    class="fab fa-instagram"></i> </a><a href="https://www.linkedin.com/company/devpixel-tech"
+                class="text-white duration-300 transition hover:text-blue-700" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a></div>
     </div>
-    <!-- ==================== DevPixel Attribition ==================== -->
-</body>
-
-</html>
+    <!-- ==================== DEVPIXEL ATTRIBITION ==================== -->
