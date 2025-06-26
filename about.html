@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Charset & Viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Elsewhere Real Estate – Modern, elegant and user-focused real estate solutions." />
+    <meta name="keywords" content="Real Estate, Property, Elsewhere, Architecture, Housing, Buy Home, Rent Home" />
+    <meta name="author" content="Elsewhere Real Estate" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Title -->
+    <title>about us | elsewhere Real Estate</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+
+    <!-- Google Fonts: Rufina -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Swiper (Slider) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="/assets/js/script.js" defer></script>
+
+    <!-- Open Graph (for Facebook & LinkedIn sharing) -->
+    <meta property="og:title" content="Elsewhere | Real Estate" />
+    <meta property="og:description" content="Explore elegant and modern properties with Elsewhere Real Estate." />
+    <meta property="og:image" content="/assets/images/og-image.jpg" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Elsewhere | Real Estate" />
+    <meta name="twitter:description" content="Explore elegant and modern properties with Elsewhere Real Estate." />
+    <meta name="twitter:image" content="/assets/images/og-image.jpg" />
+</head>
+
+<body class="m-0 p-0">
+
+    <!-- ==================== NAVBAR & HAMBURGERMENU SECTION ==================== -->
+    <section class="fixed top-0 left-0 w-full z-50">
+        <nav class="bg-black/20 backdrop-blur-sm">
+            <div class="flex items-center justify-between p-4 mx-auto max-w-7xl">
+                <!-- Logo -->
+                <a href="/index.html" class="text-2xl font-bold text-white">
+                    <img class="w-36 h-auto" src="/assets/images/logo.png" alt="Logo" />
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden sm:flex space-x-10 items-center text-white">
+                    <a href="/real-estate.html"
+                        class="relative group text-white pb-1 transition-all duration-300 hover:text-[#C9BDAB]">
+                        REAL ESTATE
+                        <span
+                            class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C9BDAB] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="/about.html"
+                        class="relative group text-white pb-1 transition-all duration-300 hover:text-[#C9BDAB]">
+                        ABOUT US
+                        <span
+                            class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C9BDAB] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="/contact.html"
+                        class="relative group text-white pb-1 transition-all duration-300 hover:text-[#C9BDAB]">
+                        CONTACT
+                        <span
+                            class="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C9BDAB] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="/contact.html"
+                        class="bg-[#C9BDAB] text-black py-2 px-4 rounded-xl transition-all duration-300 hover:bg-white hover:text-[#C9BDAB] hover:scale-105 shadow-md">
+                        Book a Visit
+                    </a>
+                </div>
+
+                <!-- Hamburger Icon -->
+                <button id="menuToggle" class="sm:hidden text-white text-3xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Mobile Menu -->
+        <div id="mobileMenu"
+            class="fixed top-0 right-0 h-full w-full bg-black/90 backdrop-blur-sm transform translate-x-full transition-transform duration-300 ease-in-out z-50 flex flex-col p-6 space-y-6">
+
+            <!-- Logo + Close Button -->
+            <div class="flex items-center justify-between mb-6">
+                <a href="/index.html">
+                    <img src="/assets/images/logo.png" alt="Logo" class="w-32 h-auto" />
+                </a>
+                <button id="menuClose" class="text-white text-3xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="flex flex-col items-center justify-center h-full space-y-6 text-xl text-white">
+                <a href="/real-estate.html"
+                    class="hover:text-[#C9BDAB] transition-all duration-300 hover:scale-105 tracking-wide">REAL
+                    ESTATE</a>
+                <a href="/about.html"
+                    class="hover:text-[#C9BDAB] transition-all duration-300 hover:scale-105 tracking-wide">ABOUT US</a>
+                <a href="/contact.html"
+                    class="hover:text-[#C9BDAB] transition-all duration-300 hover:scale-105 tracking-wide">CONTACT</a>
+                <a href="/contact.html"
+                    class="mt-6 bg-[#C9BDAB] text-black py-2 px-6 rounded-xl hover:bg-white hover:text-[#C9BDAB] transition-all duration-300 hover:scale-105 shadow-md">
+                    Book a Visit
+                </a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ==================== NAVBAR & HAMBURGERMENU SECTION ==================== -->
+
+    <!-- ==================== MAIN SECTION ==================== -->
+    <main class="aboutSection min-h-screen flex items-center justify-center relative lg:pt-40 pt-70"
+        style="background-image: url('/assets/images/aboutImage3.jpg'); background-size: cover; background-position: center;">
+
+        <div class="aboutWrapper px-4 sm:px-6 lg:px-8">
+            <!-- First Section -->
+            <div class="flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-2">
+                <div class="w-full lg:w-2/4 ">
+                    <img src="/assets/images/aboutImage4.png" alt="" class="w-full max-w-lg mx-auto" />
+                </div>
+                <div class="w-full lg:w-1/4 p-4 sm:p-6 lg:mr-100">
+                    <h1 class="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4">Your peace of mind, our priority</h1>
+                    <p class="text-base sm:text-lg text-gray-600">
+                        Curabitur efficitur ante vel mi bibendum, et maximus nisl ultricies. Morbi nec tempus dui, sit
+                        amet facilisis
+                        nisl. Curabitur efficitur luctus enim nec sollicitudin. Fusce venenatis venenatis lorem eu
+                        accumsan. Nunc sit
+                        amet mi vitae odio porttitor feugiat. Sed quis sem elementum, viverra ligula at, lobortis magna.
+                        Praesent
+                        congue nibh in dolor rutrum, et euismod quam elementum. Mauris justo felis, iaculis quis
+                        sagittis sit amet,
+                        feugiat vitae est. Aliquam porta ex elit, sit amet rutrum turpis egestas viverra. Quisque at
+                        libero purus.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Second Section -->
+            <div class="py-16 mt-20 sm:mb-14 lg:mb-30 max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <!-- Text -->
+                    <div>
+                        <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-center">About us</h1>
+                        <p class="text-base sm:text-lg text-gray-700 mb-6">
+                            Curabitur efficitur ante vel mi bibendum, et maximus nisl ultricies. Morbi nec tempus dui,
+                            sit amet facilisis
+                            nisl. Etiam lobortis est at mauris eleifend, id tempor purus ultricies. Curabitur efficitur
+                            luctus enim nec
+                            sollicitudin. Fusce venenatis venenatis lorem eu accumsan.
+                        </p>
+                        <h3
+                            class="text-lg sm:text-xl text-center font-semibold bg-[#DFE3E7] py-6 px-4 rounded-2xl shadow-lg mt-10">
+                            We strive to offer you the best possible homes to stay.
+                        </h3>
+                    </div>
+
+                    <!-- Images -->
+                    <div class="flex flex-col sm:relative items-center gap-6">
+                        <img src="/assets/images/aboutImage.jpg" alt="About Us"
+                            class="w-[300px] sm:absolute sm:top-0 sm:left-0 rounded-xl shadow-md z-10" />
+                        <img src="/assets/images/aboutImage2.jpg" alt="About Us"
+                            class="w-[320px] sm:relative sm:ml-24 sm:mt-24 rounded-xl shadow-lg z-0" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </main>
+    <!-- ==================== MAIN SECTION ==================== -->
+
+
+    <!-- ==================== FOOTER SECTION ==================== -->
+    <footer>
+        <div class="footerWrapper w-full relative">
+
+            <!-- Contact Form -->
+            <div
+                class="contactForm lg:absolute lg:bottom-100  inset-0 flex items-center justify-center px-4 z-10 pointer-events-none">
+                <div
+                    class="flex flex-col lg:flex-row gap-8 bg-[#181D24] text-white rounded-tl-[100px] rounded-br-[75px] overflow-hidden w-full max-w-6xl mx-auto pointer-events-auto">
+                    <!-- Left Side -->
+                    <div
+                        class="contactSide w-full lg:w-1/2 p-6 sm:p-8 text-center flex flex-col items-center justify-center">
+                        <h1 class="text-3xl sm:text-5xl font-bold mb-6">Let's Connect</h1>
+                        <div class="contactWrapper space-y-4 text-sm sm:text-base">
+                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center">
+                                <h3 class="font-semibold">Phone:</h3>
+                                <a href="tel:+0000000000" class="hover:text-clifford transition">+00 000 000 00</a>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center">
+                                <h3 class="font-semibold">Email:</h3>
+                                <a href="mailto:adfada@hotmail.com"
+                                    class="hover:text-clifford transition">adfada@hotmail.com</a>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center">
+                                <h3 class="font-semibold">Address:</h3>
+                                <a href="#" class="hover:text-clifford transition">123 Main Street, City</a>
+                            </div>
+                            <div class="contactSocial flex gap-4 mt-4 text-xl items-center justify-center">
+                                <a href="https://facebook.com" target="_blank" class="hover:text-[#C9BDAB] transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" class="hover:text-[#C9BDAB] transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" class="hover:text-[#C9BDAB] transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" class="hover:text-[#C9BDAB] transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="formSide w-full lg:w-1/2 p-6 sm:p-8 bg-white text-black">
+                        <form class="p-4 sm:p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-bold mb-4 text-[#181D24]">Contact Us</h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                                <input type="text" placeholder="Your Name"
+                                    class="p-3 border border-gray-300 rounded-lg" />
+                                <input type="email" placeholder="Your Email"
+                                    class="p-3 border border-gray-300 rounded-lg" />
+                            </div>
+                            <textarea placeholder="Your Message"
+                                class="w-full p-3 border border-gray-300 rounded-lg mb-4"></textarea>
+                            <button type="submit"
+                                class="w-1/3 bg-[#C9BDAB] text-white py-3 rounded-b-2xl hover:bg-[#A89F8D] transition duration-300">Send
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Contact Form -->
+
+            <!-- Footer Content -->
+            <div class="footerContent bg-[#d9dde1] py-10  ">
+                <div
+                    class="footerText w-full items-start  lg:mt-50 px-6 md:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-20 z-50">
+                    <!-- Left Column -->
+                    <div class="flex-1">
+                        <h2 class="text-gray-600 mb-4 text-xl font-semibold">Luxury RENTALS</h2>
+                        <p class="text-gray-600">
+                            We are a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+
+                    <!-- Center Column (Links) -->
+                    <div class="flex-1">
+                        <h2 class="text-gray-600 mb-4 text-xl font-semibold">Legal</h2>
+                        <div class="flex flex-col gap-2 text-sm">
+                            <a href="#" class="text-gray-600 hover:text-black">Terms & Conditions</a>
+                            <a href="#" class="text-gray-600 hover:text-black">Privacy Notice and Cookies</a>
+                            <a href="#" class="text-gray-600 hover:text-black">Imprint</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column (Contact + Social) -->
+                    <div class="flex-1 items-start">
+                        <h2 class="text-black font-bold mb-4 text-xl">Connect With Us</h2>
+                        <div class="flex flex-col gap-2 text-sm text-gray-600 mb-4">
+                            <a href="#" class="hover:text-[#C9BDAB]">+00 000 000 00</a>
+                            <a href="#" class="hover:text-[#C9BDAB]">info@luxuryrentals.com</a>
+                        </div>
+                        <div class="flex gap-4 text-xl text-gray-600">
+                            <a href="#" class="hover:text-blue-600 transition"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="hover:text-pink-600 transition"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-blue-700 transition"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <p class="text-gray-600 mt-4 text-xs">© 2023 Elsewhere. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Content -->
+
+        </div>
+    </footer>
+    <!-- ==================== FOOTER SECTION ==================== -->
+
+
+
+    <!-- ==================== DevPixel Attribition ==================== -->
+    <div class="flex flex-col items-center justify-center bg-black/75 text-white p-3">
+        <div class="flex items-center justify-center gap-4 text-center text-sm text-white border-t border-gray-200">
+            Designed with ❤️ by <a href="https://devpiksel.com" target="_blank"
+                class="text-clifford font-semibold hover:underline">
+                <img src="/assets/images/devpixel-logo.png" width="100" height="100" alt="">
+            </a>
+        </div>
+        <div class="devPixelSocial flex items-center justify-center gap-4 mt-2">
+            <a href="https://devpiksel.com" target="_blank"
+                class="text-white hover:text-green-500 transition duration-300">
+                <i class="fa fa-link" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/devpixeltech/" target="_blank"
+                class="text-white hover:text-pink-600 transition duration-300">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/devpixel-tech" target="_blank"
+                class="text-white hover:text-blue-700 transition duration-300">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+    <!-- ==================== DevPixel Attribition ==================== -->
+
+
+
+</body>
+
+</html>

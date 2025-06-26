@@ -1,0 +1,36 @@
+body {
+  font-family: "Rufina", serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  --color-primary: #5b656f;
+  --color-primary2: #8998a6;
+  --color-primary3: #dfe3e7;
+  --color-secondary: #ab9c85;
+  --color-secondary2: #f5e9d6;
+  --color-secondary3: #f5f3f1;
+}
+
+.rufina-regular {
+  font-family: "Rufina", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rufina-bold {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.swiper-pagination-bullet {
+  background: #c9bdab;
+  opacity: 0.7;
+}
+.swiper-pagination-bullet-active {
+  background: #000;
+}
