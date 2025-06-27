@@ -141,3 +141,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // SwiperJS Real Estate
+
+// Scroll Sticky Navbar
+window.addEventListener("scroll", () => {
+  const nav = document.querySelector("nav");
+  if (window.scrollY > 30) {
+    nav.classList.add("bg-black/70");
+  } else {
+    nav.classList.remove("bg-black/70");
+  }
+});
+// Scroll Sticky Navbar
