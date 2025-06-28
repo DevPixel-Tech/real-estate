@@ -33,8 +33,8 @@
 <body class="m-0 p-0">
 
     <!-- ==================== NAVBAR & HAMBURGERMENU SECTION ==================== -->
-    <section class="w-full left-0 fixed top-0 z-50">
-        <nav class="bg-black/20 backdrop-blur-sm">
+    <section class="w-full fixed top-0 z-50 bg-transparent">
+        <nav class="backdrop-blur-md bg-black/40 transition-all duration-300">
             <div class="flex items-center justify-between max-w-7xl mx-auto p-4">
                 <a href="/index.html" class="text-white font-bold text-2xl">
                     <img src="/assets/images/logo.png" class="h-auto w-36" alt="Logo">
@@ -82,9 +82,9 @@
         </nav>
 
         <!-- Mobile Menu -->
-        <div class="flex flex-col w-full p-6 backdrop-blur-sm bg-black/90 duration-300 ease-in-out fixed h-full right-0 space-y-6 top-0 transform transition-transform translate-x-full z-50"
+        <div class="flex flex-col w-full p-6 backdrop-blur-sm bg-black/90 duration-300 ease-in-out fixed h-full right-0 space-y-6 top-0 transform transition-transform translate-x-full z-50 "
             id="mobileMenu">
-            <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center justify-between mb-6 ">
                 <a href="/index.html">
                     <img src="/assets/images/logo.png" class="h-auto w-32" alt="Logo">
                 </a>
@@ -92,7 +92,7 @@
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            <nav class="flex flex-col items-center text-white h-full space-y-6 text-xl">
+            <nav class="flex flex-col items-center text-white h-full space-y-6 text-xl items-center justify-center">
                 <a href="/index.html"
                     class="hover:text-[#C9BDAB] transition duration-300 hover:scale-105 tracking-wide">HOME</a>
                 <a href="/real-estate.html"
@@ -117,9 +117,10 @@
         style="background-image: url('/assets/images/aboutImage3.jpg'); background-size: cover; background-position: center;">
 
         <div class="aboutWrapper px-4 sm:px-6 lg:px-8">
+
             <!-- First Section -->
             <div class="flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-2">
-                <div class="w-full lg:w-2/4 ">
+                <div class="w-full lg:w-2/4">
                     <img src="/assets/images/aboutImage4.png" alt="" class="w-full max-w-lg mx-auto" />
                 </div>
                 <div class="w-full lg:w-1/4 p-4 sm:p-6 lg:mr-100">
@@ -127,15 +128,12 @@
                     <p class="text-base sm:text-lg text-gray-600">
                         Elsewhere is a boutique U.S. real estate investment platform designed for discerning investors
                         seeking secure, dollar-based income and global portfolio diversification — without operational
-                        complexity.
-
+                        complexity.<br><br>
                         Founded with the belief that global investment opportunities should be accessible, transparent,
                         and hassle-free, Elsewhere bridges the gap between international investors and the U.S. real
                         estate market. We provide end-to-end solutions — from property acquisition to property
                         management — so our clients can generate steady, dollar-based rental income without ever leaving
-                        their home country
-
-
+                        their home country.
                     </p>
                 </div>
             </div>
@@ -143,29 +141,34 @@
             <!-- Second Section -->
             <div class="py-16 mt-20 sm:mb-14 lg:mb-30 max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
                     <!-- Text -->
                     <div>
-                        <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-center">Our Vision
-
-                        </h1>
-                        <p class="text-base sm:text-lg text-gray-700 mb-6">
+                        <!-- Vision -->
+                        <h2 class="text-4xl font-bold mb-6 text-center">Our Vision</h2>
+                        <p class="text-base sm:text-lg text-gray-700 mb-10">
                             Our vision is to empower individual investors to access cross-border real estate with the
                             same transparency, security, and discipline expected in institutional finance. At Elsewhere,
                             we aim to eliminate complexity and deliver long-term, sustainable value through
-                            professionally managed property investments.
+                            professionally managed property investments.<br><br>
                             We believe real estate is not just an asset class — it is a strategic tool for wealth
                             preservation and global positioning. That’s why we treat every investment with the same
-                            level of care, precision, and responsibility as we would our own. Our commitment is to build
-                            lasting trust through a refined and reliable investment experience.
-                            Our Mission
-                            Our mission is to provide a platform where investors can deploy their time, capital, and
-                            trust with maximum efficiency.
-                            At Elsewhere, we simplify access to U.S. real estate opportunities while managing the
-                            operational complexity on behalf of our clients with full transparency and professionalism.
-                            Our purpose extends beyond generating income — we aim to deliver a secure, sustainable, and
-                            strategically sound investment experience. Every decision we make is guided by long-term
-                            thinking and an unwavering commitment to protecting investor interests.
+                            level of care, precision, and responsibility as we would our own.
                         </p>
+
+                        <!-- Mission -->
+                        <h2 class="text-3xl font-semibold mb-4 text-center">Our Mission</h2>
+                        <p class="text-base sm:text-lg text-gray-700 mb-6">
+                            Our mission is to provide a platform where investors can deploy their time, capital, and
+                            trust with maximum efficiency. Elsewhere simplifies access to U.S. real estate while
+                            managing
+                            operational complexity with full transparency and professionalism.<br><br>
+                            Our goal is more than just generating income — we’re committed to delivering a secure,
+                            sustainable, and strategically sound investment experience guided by long-term thinking and
+                            an unwavering commitment to protecting investor interests.
+                        </p>
+
+                        <!-- Highlight -->
                         <h3
                             class="text-lg sm:text-xl text-center font-semibold bg-[#DFE3E7] py-6 px-4 rounded-2xl shadow-lg mt-10">
                             We strive to offer you the best possible homes to stay.
@@ -174,22 +177,17 @@
 
                     <!-- Images -->
                     <div class="flex flex-col sm:relative items-center gap-6">
-                        <img src="/assets/images/aboutImage.jpg" alt="About Us"
+                        <img src="/assets/images/aboutImage.jpg" alt="Our Vision"
                             class="w-[300px] sm:absolute sm:top-0 sm:left-0 rounded-xl shadow-md z-10" />
-                        <img src="/assets/images/aboutImage2.jpg" alt="About Us"
+                        <img src="/assets/images/aboutImage2.jpg" alt="Our Mission"
                             class="w-[320px] sm:relative sm:ml-24 sm:mt-24 rounded-xl shadow-lg z-0" />
                     </div>
                 </div>
             </div>
         </div>
 
-
-
-
-
-
-
     </main>
+
     <!-- ==================== MAIN SECTION ==================== -->
 
     <!-- ==================== FOOTER SECTION ==================== -->
